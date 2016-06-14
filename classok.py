@@ -1,4 +1,3 @@
-
 class Parent(object):
     static = None
 
@@ -6,8 +5,8 @@ class Parent(object):
         self.name = name
         self.age = age
 
-A = [Parent('Bela'+str(i), i*i) for i in range(5)]
+if __name__ == '__main__':
 
-
-for i in A:
-    print i.name, i.age
+    A = [Parent('Bela'+str(i), i*i) for i in range(5)]
+    for i in A:
+        print i.name, i.age
